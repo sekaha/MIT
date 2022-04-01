@@ -1,4 +1,4 @@
-from StateMachine import StateMachine as SM
+import StateMachine as SM
 
 class Accumulator(SM):
     def __init__(self,s0):

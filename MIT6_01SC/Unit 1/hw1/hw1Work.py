@@ -5,8 +5,6 @@
 # for functional style
 import operator
 
-from numpy import isin
-
 ### Syntax Tree Classes
 # leaf nodes => are numbers/vars
 # internal nodes => are operations (non-terminating nodes! like encountered in linguistics)
@@ -85,9 +83,9 @@ class Variable:
 
 ### Tokenizer
 
-# returns a list of tokens
 token_types = {"(":None,")":None,"*":Prod,"/":Quot,"+":Sum,"-":Diff,"=":Assign}
 
+# returns a list of tokens
 def tokenize(input_str):
     input_str = input_str.replace(" ","")
     terminating_value = ""
