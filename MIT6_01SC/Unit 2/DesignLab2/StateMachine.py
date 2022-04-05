@@ -13,8 +13,6 @@
 
 class StateMachine:
     start_state = None
-    def __init__(self):
-        self.state = 0
 
     # requires a start_state to be initialized
     def start(self):
